@@ -1,0 +1,154 @@
+file -> new -> dynamic web project 
+
+website --> web server -> 
+		apache tomcat -> 
+		
+		
+file->new->server-> 
+
+----------------------------------------------------------------
+
+project explorer -> 
+
+window -> show view -> project explorer 
+				    -> other => type 
+
+				    
+if my project runs in side the internal browser ? 
+	window -> browser -> select your choice 
+	
+------------------------------------------------------------------
+
+java -> code 
+
+webapp -> web application -> html , css , js , image, audio , video ---> 
+
+MVC -> com -> google ->
+			controller 
+			bean
+			dao 
+			util 
+			
+web app -> 
+	WEB-INF 
+		web.xml -> configuration 
+		lib 
+		
+servlet ->version -> 2.5 
+			
+-------------------------------------------------------------------------	
+		
+client 						server 
+	request 			response 
+	
+----------------------------------------------------------
+
+servlet -> 
+
+	class : java  : controller 
+	class -> Servlet -> HttpServlet -> extends HttpServlet  
+	class -> Thread -> extends Thread . implements Runnable 
+	class -> AO -> exception -> extends Exception 
+	
+	HttpServlet -> servlet-api.jar
+	
+	Str.class  	
+	Sql.class 
+	Curr.class 
+	
+	.jar -> jar -> class 
+	
+	rt.jar 
+		java 
+			util
+				Scanner,Date,Cal 
+			io	
+				File 
+			lang
+			sql
+			
+	
+	
+	
+	how to link servlet-api.jar -> web project 
+	
+	project -> right click -> properties -> java build path -> 
+	libraries -> add external jar -> brwose -> drive to apache tomcat -> lib ->
+	servlet-api.jar -> open-> click on order and export => select all ->
+	apply and close 
+	
+	
+	
+		
+	implementation of servlet -> 		
+		three steps -> 
+			1) class extends HttpServlet 
+			2) override service 	
+			3) map url pattern , SignupServlet 
+			
+				
+	
+-----------------------------------------------------------------------------
+
+Signup.html -> fn ln email password -> submit ->
+				request {fn em pwd } server ->	process -> response
+				
+				request -> process -> servlet  
+				
+				
+				lib -> jar -> servlet-api.jar 
+				
+
+-----------------------------------------------------------------------------
+		class A extends Thread{
+			public void run(){
+			
+			}
+		}				
+		
+		@WebServlet("/A")
+		class A  extends HttpServlet{
+			public void service(HttpServletRequest request,HttpServletResponse response){
+			
+			}
+		}
+		
+---------------------------------------------------------------------------
+InputProduct.html 
+	name 
+	category 
+	price 
+			submit 
+			
+		
+server -> read all the info -> finalprice for the product { price + 18% gst } 
+
+response -> product info -> name category price final price 
+		
+			
+----------------------------------------------------------------------------- 
+ 	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			
