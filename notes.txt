@@ -132,6 +132,12 @@ response -> product info -> name category price final price
 		
 		
 		
+		How to create Servlet ? 
+		how to user's input from form?  request.getParameter() , getParameterValues()
+		how to print / send response data using servlet? 
+				PrintWriter out = response.getWriter(); 
+		
+		
 		
 		
 		

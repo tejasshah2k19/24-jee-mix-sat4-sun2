@@ -10,5 +10,11 @@ public class SignupServlet extends HttpServlet {
 
 	public void service(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("SignupServlet::service()");
+		String hb[] = request.getParameterValues("hobby"); //wp ig fb
+	
+		//hb[0] -> wp 
+		//hb[1] -> ig
+		//hb[2] -> fb 
+		
 	}
 }
