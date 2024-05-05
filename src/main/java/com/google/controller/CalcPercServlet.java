@@ -20,11 +20,16 @@ public class CalcPercServlet extends HttpServlet {
 		String sciStr = request.getParameter("sci");
 		String engStr = request.getParameter("eng");
 
+		String alphaRegEx  = "[a-zA-Z]+";
+		
 		boolean isError = false;
 		String error = "";
 		if (name == null || name.trim().length() == 0) {
 			isError = true;
 			error = "Enter Name";
+		}else if(name.matches(alphaRegEx)==false){
+			isError = true;
+			error = "Enter Valid Name";
 		}
 		if (mathsStr == null || mathsStr.trim().length() == 0) {
 			isError = true;
