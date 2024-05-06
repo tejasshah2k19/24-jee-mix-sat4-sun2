@@ -20,14 +20,14 @@ public class CalcPercServlet extends HttpServlet {
 		String sciStr = request.getParameter("sci");
 		String engStr = request.getParameter("eng");
 
-		String alphaRegEx  = "[a-zA-Z]+";
-		
+		String alphaRegEx = "[a-zA-Z]+";
+		String digitRegEx = "[0-9]{1,3}";
 		boolean isError = false;
 		String error = "";
 		if (name == null || name.trim().length() == 0) {
 			isError = true;
 			error = "Enter Name";
-		}else if(name.matches(alphaRegEx)==false){
+		} else if (name.matches(alphaRegEx) == false) {
 			isError = true;
 			error = "Enter Valid Name";
 		}
@@ -35,11 +35,17 @@ public class CalcPercServlet extends HttpServlet {
 			isError = true;
 			error += "<br>Enter Maths Marks";
 //			error= error + "Enter Maths Marks";
+		} else if (mathsStr.matches(digitRegEx) == false) {
+			isError = true;
+			error += "<br>Enter Valid Maths Marks";
 		}
 		if (sciStr == null || sciStr.trim().length() == 0) {
 			isError = true;
 			error += "<br>Enter Sci Marks";
 
+		} else if (sciStr.matches(digitRegEx) == false) {
+			isError = true;
+			error += "<br>Enter Valid Sci Marks";
 		}
 		if (engStr == null || engStr.trim().length() == 0) {
 			isError = true;
@@ -57,7 +63,7 @@ public class CalcPercServlet extends HttpServlet {
 
 		} else {
 			// go ahead
-			Integer maths = Integer.parseInt(mathsStr);
+			Integer maths = Integer.parseInt(mathsStr);	
 			Integer sci = Integer.parseInt(sciStr);
 			Integer eng = Integer.parseInt(engStr);
 

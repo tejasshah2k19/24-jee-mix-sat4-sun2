@@ -139,16 +139,28 @@ response -> product info -> name category price final price
 		
 		
 		
+---------------------------------------------------------------------------------
+
+jsp-servlet 
+		
+	HTML -> HTML 	
+	jsp  -> JAVA + HTML 	
+		
+		
+		java server pages 
+		java servlet pages 
+		
+view -> HTML , JSP 		
 		
 		
 		
+how to create jsp -> 
+		file -> new -> jsp -> 
 		
-		
-		
-		
-		
-		
-		
+		scriptlet  		<% %>  java code  
+		declaration		<%! %> 
+		expression 		<%= %>  variable print 
+				
 		
 		
 		
