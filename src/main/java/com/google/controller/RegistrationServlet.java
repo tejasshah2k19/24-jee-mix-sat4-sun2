@@ -26,16 +26,22 @@ public class RegistrationServlet extends HttpServlet {
 		if (firstName == null || firstName.trim().length() == 0) {
 			isError = true;
 			request.setAttribute("firstNameError", "Please Enter FirstName");
+		}else {
+			request.setAttribute("firstNameValue", firstName);
 		}
 
 		if (gender == null) {
 			isError = true;
 			request.setAttribute("genderError", "Please Select Gender");
+		}else {
+			request.setAttribute("genderValue", gender);
 		}
 
 		if (city.equals("-1")) {
 			isError = true;
 			request.setAttribute("cityError", "Please Select City");
+		}else {
+			request.setAttribute("cityValue", city);
 		}
 
 		if (isError == true) {
