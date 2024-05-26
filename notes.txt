@@ -175,23 +175,52 @@ ${}
 
 
 
+---------------------------------------------------------------------
+
+filter -> pre process request 
+
+
+				icici bank 
+		
+				Login -> 
+				
+			pak ->	login.jsp 
+ 
+
+request --> | server | process 
+
+whatsapp-> 
+
+dhirj sir -> filter ->compress->10MB share -> 10 MB server ->10 MB MEET  
+          50MB --->  server{50MB} --> 50MB MEET 
+          
+		  50MB --->  server{50MB} --> 50MB MEET
+
+encrypt 
 
 
 
+-------------------------------------------------------------------------
+
+Signup.jsp 
+
+			firstName
+			email
+			password 
+						submit 
+						
+						
+server 
+	SignupFilter{validation} -->yes->	SignupServlet -> read validation insert 
+							    no->go back -> Signup.jsp error 
+							    
+							    
+500 signup -> ? 450 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+1 class implements Filter 
+2 override method {init doFilter{logic} destroy}
+3 mapping with url {@WebFilter}
 
 
 

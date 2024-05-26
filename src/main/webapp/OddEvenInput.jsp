@@ -11,7 +11,9 @@
 
 <form action="OddEvenServlet" method="post">
 
-	Num : <input type="text" name="num"/><br><br> 
+	Num : <input type="text" name="num"/> 
+	${numError}
+	<br><br> 
 	<input type="submit" value="Process"/> 
 </form>
 </body>

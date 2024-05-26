@@ -13,7 +13,7 @@ public class OddEvenServlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-	
+		System.out.println("InSide ODdEVEN Servlet....");
 		String numStr = request.getParameter("num");
 	
 		int num = Integer.parseInt(numStr);//method 2 
