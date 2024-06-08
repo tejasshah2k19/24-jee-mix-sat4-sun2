@@ -255,13 +255,29 @@ CGI ->1 : object ,2 : object , 3 : object
 
 -------------------------------------------------------------------
 
+filter lifecycle 
+
+	1) load class :when we start server  
+	2) instance :when we start server
+	3) init() :1 time : when we start server
+	4) doFilter(): n time : when we hit given url 
+	5) destroy() : 1 time : when we shutdown server 
+	
 
 
 
+================================================
+
+can we use 1 filter for more than 1 servlet ? YES 
+
+can we use n number filter for 1 servlet ? YES 
 
 
+OddEven.jsp submit 
+		OddEvenServlet => OddEvenFilter       {required}  
+		OddEvenSerlvet => OddEvenRegExFilter  {proper format regex}  
 
-
+================================================
 
 
 
