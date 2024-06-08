@@ -11,16 +11,17 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-@WebFilter("/OddEvenServlet")
+@WebFilter(urlPatterns = {"/ServletLifeCycle","/OddEvenServlet"})
 public class OddEvenFilter implements Filter {
 
 	public void destroy() {
+		System.out.println("OddEvenFilter::destroy()");
 
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-
+		System.out.println("OddEvenFilter::doFilter()");
 		// HttpServletRequest req = (HttpServletRequest)request;
 		// validation
 		String numStr = request.getParameter("num");
@@ -49,7 +50,7 @@ public class OddEvenFilter implements Filter {
 	}
 
 	public void init(FilterConfig arg0) throws ServletException {
-
+		System.out.println("OddEvenFilter::init()");
 	}
 
 }
