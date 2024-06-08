@@ -280,13 +280,30 @@ OddEven.jsp submit
 ================================================
 
 
+	user's info ->
+			1) 	secure / privacy /  
+			2)  public 
+
+Cookie -> client -> browser 
+Session -> server -> server's memory 
+			
+
+Amazon.
+Facebook 
+
+welcome , Ram 
+
+Address ->  
 
 
+Cookie -> user's information
+	   -> site information 
+	   	
 
-
-
-
-
+1) how to add cookie
+2) how to read on jsp 
+3) how to read on servlet 
+ 
 
 
 
