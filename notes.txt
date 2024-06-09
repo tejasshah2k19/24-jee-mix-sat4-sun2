@@ -305,9 +305,54 @@ Cookie -> user's information
 3) how to read on servlet 
  
 
+	Cookie c = new Cookie("name",value); 
+	response.addCookie(c); 
+	
+
+	${cookie.name.value} 
+
+------------------------------------------------------------
 
 
+default cookie -> 1 year 
+	how to change expired time 
+	how to remove cookie 
+	
+CookieLogin.jsp ->	userName , password 
+CookieHome.jsp 
 
+
+<b> 
+<a>
+<i> 
+
+JSTL -> java standard tag lib. 
+
+1) core*** 
+2) string#  
+3) sql# 
+4) xml# 
+5) format/function# 
+
+
+if 
+redirect 
+
+download jstl.jar
+copy -> paste -> WEB-INF/**lib** 
+
+right click on your project -> 
+	properties -> java build path -> select lib tab -> add jar -> browse -> project->lib->
+	jstl.jar -> now click on order and exports tab -> select all -> apply and close . 
+	
+	
+	
+1) link your .jar  
+2) jsp import   <%@taglib %> 
+3) use 
+
+
+-------------------------------------------------------------------------
 
 
 

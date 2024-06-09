@@ -23,7 +23,8 @@ public class CookieLoginServlet extends HttpServlet {
 			
 			//dataName : dataValue 
 			Cookie c = new Cookie("userName", userName); //create 
-			response.addCookie(c);//1 year expired 
+			c.setMaxAge(60*60*24);//1 day ->expired modify 
+			response.addCookie(c);//default -> 1 year expired 
 			
 			response.sendRedirect("CookieHome.jsp");
 		}else {
