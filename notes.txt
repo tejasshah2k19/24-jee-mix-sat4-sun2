@@ -300,9 +300,9 @@ Cookie -> user's information
 	   -> site information 
 	   	
 
-1) how to add cookie
-2) how to read on jsp 
-3) how to read on servlet 
+1) how to add cookie -> response.addCookie(c); 
+2) how to read on jsp -> ${cookie.firstName.value}
+3) how to read on servlet -> request.getCookies()
  
 
 	Cookie c = new Cookie("name",value); 
@@ -353,6 +353,121 @@ right click on your project ->
 
 
 -------------------------------------------------------------------------
+jstl -> tag -> 
+
+jstl.jar -> 
+
+
+----------------------------------------------------------------------
+MAVEN -> dep/
+			jar 
+			lib
+			
+servlet-api.jar 
+mysql-connector.jar 
+payment.jar 
+
+	internet ->  version , crp, virus , 
+	
+		paypal.jar:4 
+			upi.jar:5
+				rbi.jar:9
+				
+
+
+maven -> project -> pom.xml 
+
+	project object model ->
+	
+	project information->
+			dep 
+			
+	 
+
+---------------------------------------------------------------------------
+
+jar -> mysql connector ->communication ->
+
+Connection -> dbConnection 
+PreparedStatement -> executeQuery 
+ 
+
+driver -> com.mysql.cj.jdbc.Driver  
+url -> 		jdbc:mysql://localhost:3306/dbname 
+userName -> root 
+password -> root 
+
+
+DbConnection -> Controller -> 
+
+
+----------------------------------------------------------------------------
+category :
+		categoryId
+		categoryName
+		description 
+		
+
+
+jsp : categoryName 
+	  description 
+	  
+servlet : insert in category table 
+
+	  
+-------------------------------------------------------------------------------
+
+user's info : info 
+
+1) session 
+2) cookie 
+
+session -> server memory -> server side 
+cookie  -> browser memory -> client side
+ 
+otp -> session 
+
+cookie -> 
+id 
+datetime 
+			
+			 
+session -> 
+	will created by server only -> 
+	
+	1 user request -> session 
+	2 user request -> session 
+	3 user request -> session 
+	
+	
+	
+	client 
+	browser -----> localhost:9999/web/Home.jsp	--->  		server  					[ sessions : [x,A,B,C,D ] ] 
+						request
+						x 
+						
+	A						
+			Login.jsp		
+			Home.jsp
+			AddTocart
+			mycart 
+				 
+	B		
+			Reg.jsp 
+	C		
+			MyCart.jsp 
+	D	
+			Checkout.jsp 		
+	
+	
+	session -> scope -> entire application -> all the jsp and servlet -->
+	user wise -> 
+	
+	
+	
+	
+	
+
 
 
 
