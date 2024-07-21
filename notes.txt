@@ -461,18 +461,64 @@ session ->
 	
 	
 	session -> scope -> entire application -> all the jsp and servlet -->
-	user wise -> 
+	user wise -> 1 -> 2 , 3 ,4 -> application 
 	
 	
+	request -> scope -> limited current node --> next node ->
+					1 --> 2  X destroy 
+					
+	
+scope => page{single page} , request{1:2} ,session{1:N - entire app} , application{1:N - entire app} 
+	
+				session vs application 
+				session -> user wise -> Mr X session id -> Mr  Y get X 
+				Mr X -> set -> get 
+				Mr Y -> set -> get  
+				
+				application -> Mr X -> application set -> Mr Y get True  
+				Mr X -> set 
+				Mr Y -> set : over write 
 	
 	
+				webapp -> 5000 users -> session object -> 5000  -> otp 
+						                application object -> 1 -> code -> 
+						                
+						                
+						                
 	
 
+		HttpSession session =	request.getSession();
+		session.setAttribute("email","test@gmail.com");
 
-
-
+		${email} 
+				
+		
+		request.setAttribute -> email jack 
+		session.setAttribute -> email john
+		application.setAttribute -> email joker		
+		
+		${email} -> page , request , session , application 
+		
+		${requestScope.email}
+		${sessionScope.email}
+		${applicationScope.email} 
+		
+---------------------------------------------------------------------------------		
+		
+		when session create ? -> first request {server}-> 
+		when session destroy ? -> stop , restart 
+	
+	
+		session destroy --> 
+		
+		1) user   ->  logout 
+		2) server ->  timeout 	 
+			
+-----------------------------------------------------------------------------------		
 		
 		
+		
+		 
 		
 		
 		

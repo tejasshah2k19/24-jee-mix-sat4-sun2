@@ -17,5 +17,9 @@
 	<BR>
 	
 	Username : ${userName}
+	
+	<br><br> 
+	<a href="logout">Logout</a>
+
 </body>
 </html>
