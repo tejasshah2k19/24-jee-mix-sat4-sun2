@@ -22,6 +22,7 @@ public class UserNameSessionServlet extends HttpServlet {
 		// getSession(false);
 
 		session.setAttribute("userName", userName);
+		session.setMaxInactiveInterval(60*10);
 		
 		response.sendRedirect("SessionHome.jsp");
 	}

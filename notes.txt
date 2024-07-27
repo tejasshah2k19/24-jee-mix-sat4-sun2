@@ -511,10 +511,68 @@ scope => page{single page} , request{1:2} ,session{1:N - entire app} , applicati
 	
 		session destroy --> 
 		
-		1) user   ->  logout 
-		2) server ->  timeout 	 
+		1) user   ->  logout  
+		2) server ->  timeout 	{web.xml , java} 
 			
 -----------------------------------------------------------------------------------		
+
+
+server -> request -> session created 
+session.invalidate() -> session destroy 
+session time out -> session destroy 
+
+server start 
+server stop 
+
+
+
+
+Listener -> event -> listen -> action perform 
+
+
+money control -> share -> 
+	-> api -> NSE BSE -> rate -> 
+
+google.com ->api -> w.site -> 
+
+time , data , size , request -> 
+
+
+
+start server -> aws connection , nse bse connection open  
+stop server  -> close 
+
+
+session create count++ 
+session destroy count-- 
+
+user count -> online 
+
+
+how to? 
+
+1) class implements XXXX 
+2) override method logic 
+3) @WebListner 
+
+----------------------------------------------------------------
+server start -> msg 
+server stop -> msg 
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 		
 		
