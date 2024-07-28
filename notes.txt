@@ -556,12 +556,45 @@ how to?
 3) @WebListner 
 
 ----------------------------------------------------------------
+ServletContextListener 
 server start -> msg 
 server stop -> msg 
 ----------------------------------------------------------------
+how many users are online ? 
 
 
+session -> count total session -> created ++ ->
+session => destroy --> -- 
 
+
+count =0 
+
+3
+
+session created
+session destroyed 
+
+Listener -> HttpSessionListener
+-------------------------------------------------------------------
+
+ <%@ %>  Directives
+ 
+ <%@page %>  current jsp -> behaviour -> 
+ <%@include %>  -> 
+ <%@taglib %>   -> lib -> import -> tag -> jstl 
+ 
+
+session="false"  session disable 
+
+isELIgnored="false" 
+
+----------------------------------------------------------------------
+inclusion 
+
+config and context 
+
+
+---------------------------------------------------------------------- 
 
 
 

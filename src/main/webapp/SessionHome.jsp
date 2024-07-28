@@ -1,3 +1,4 @@
+<%@page import="com.google.listener.TotalUserCountListener"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -18,6 +19,9 @@
 	
 	Username : ${userName}
 	
+	<br><br>
+	
+	Total Online User : <%=TotalUserCountListener.totalUsers %>
 	<br><br> 
 	<a href="logout">Logout</a>
 
