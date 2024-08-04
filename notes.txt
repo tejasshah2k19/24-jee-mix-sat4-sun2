@@ -597,11 +597,26 @@ config and context
 ---------------------------------------------------------------------- 
 
 
+inclusion -> 
+		1) static inclusion  -> <%@include file="Header.jsp"/>  
+		2) dynamic inclusion -> <jsp:include page="Header.jsp"/>  
+		
+		
+		static inclusion -> code copy 
+		
+		Header.jsp 5 line 
+		Home.jsp 5 line { static include Header.jsp }
+		total line => 10 
 
 
 
+		Dynamic inclusion -> forward output render 
+		Header.jsp 5 line 
+		Home.jsp 5 line { dynamic include Header.jsp }
+		total line => 5 
+		
 
-
+-------------------------------------------------------------------------
 
 
 
